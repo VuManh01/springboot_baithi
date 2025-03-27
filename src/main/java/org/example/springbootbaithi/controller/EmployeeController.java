@@ -1,10 +1,10 @@
-package controller;
+package org.example.springbootbaithi.controller;
 
-import model.Employee;
+import org.example.springbootbaithi.model.Employee;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import service.EmployeeService;
+import org.example.springbootbaithi.service.EmployeeService;
 
 @Controller
 @RequestMapping("/employees")

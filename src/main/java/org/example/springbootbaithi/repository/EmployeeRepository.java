@@ -1,6 +1,6 @@
-package repository;
+package org.example.springbootbaithi.repository;
 
-import model.Employee;
+import org.example.springbootbaithi.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
-package service;
+package org.example.springbootbaithi.service;
 
-import model.Employee;
+import org.example.springbootbaithi.model.Employee;
 import org.springframework.stereotype.Service;
-import repository.EmployeeRepository;
+import org.example.springbootbaithi.repository.EmployeeRepository;
 
 import java.util.List;
 
@@ -28,6 +28,9 @@ public class EmployeeService {
     }
 
     public void deleteEmployee(Long id) {
+        if (!employeeRepository.existsById(id)) {
+            throw new RuntimeException("Employee with ID " + id + " not found");
+        }
         employeeRepository.deleteById(id);
     }
 }
